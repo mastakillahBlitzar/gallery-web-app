@@ -1,0 +1,47 @@
+.grid-wrapper {
+
+    &__title {
+        background: white;
+        text-align: center;
+        padding: 4rem 0;
+        text-transform: uppercase;
+
+        h1 {
+            line-height: 3rem;
+        }
+
+        h3{
+            font-size: 1.4rem;
+        }
+
+        &--deco {
+            transform: skew(-20deg);
+            background: #202329;
+            display: inline-block;
+            padding: .5rem 1rem;
+        }
+
+        &__description {
+            color: rgb(255, 152, 0);
+            transform: skew(20deg);
+            text-transform: uppercase;
+        }
+    }
+
+    &__inner {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+
+@media all and (min-width: 768px) {
+    .grid-wrapper {
+        &__inner {
+            padding: 0 15rem;
+        }
+    }
+}

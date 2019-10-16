@@ -1,0 +1,16 @@
+<div class="card-container">
+    <div class="card-container__inner">
+        <div class="card-container__inner__head">
+            <img class="card-container__inner__head__image" [src]="character.image">
+            <div class="card-container__inner__head__name">
+                {{character.name}}
+            </div>
+        </div>
+        <div class="card-container__inner__info">
+            <div class="card-container__inner__info__detail" *ngFor="let detail of character.details">
+                <div class="card-container__inner__info__detail__label">{{detail.label}}</div>
+                <div class="card-container__inner__info__detail__value">{{detail.value}}</div>
+            </div>
+        </div>
+    </div>
+</div>

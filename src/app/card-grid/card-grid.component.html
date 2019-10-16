@@ -1,0 +1,16 @@
+<div class="grid-wrapper">
+    <div class="grid-wrapper__title">
+        <h1>Rick and Morty</h1>
+        <div class="grid-wrapper__title--deco">
+            <h3 class="grid-wrapper__title__description">Hey, did you ever want to hold a Terry fold?</h3>
+        </div>
+    </div>
+    <article>
+        <div class="grid-wrapper__inner">
+            <ng-container *ngFor="let c of characters">
+                <app-character-card [character]="c"></app-character-card>
+            </ng-container>
+        </div>
+    </article>
+
+</div>

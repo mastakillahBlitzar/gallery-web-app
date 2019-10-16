@@ -1,0 +1,54 @@
+.card-container {
+    background: rgb(51, 51, 51);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    min-height: 400px;
+
+    &__inner {
+        &__head {
+            overflow: hidden;
+            position: relative;
+
+            &__image {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            &__name {
+                position: absolute;
+                color: white;
+                font-size: 1.5rem;
+                bottom: 0;
+                text-align: start;
+                width: 100%;
+                padding: 1rem;
+                background: rgb(51, 51, 51, .5)
+            }
+        }
+
+        &__info {
+            padding: 1rem 2rem;
+
+            &__detail {
+                padding: 1rem 0;
+                display: flex;
+                border-bottom: solid 1px rgb(158, 158, 158);
+
+                &__label {
+                    color: rgb(158, 158, 158);
+                    flex: 1;
+                }
+
+                &__value {
+                    color: rgb(255, 152, 0);
+                    text-align: end;
+                }
+            }
+
+            &__detail:last-child {
+                border: none;
+            }
+        }
+    }
+}
